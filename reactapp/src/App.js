@@ -43,7 +43,6 @@ function App() {
             <h1 className="text-3xl">Quizz App</h1>
             <i className="">learn react</i>
           </div>
-              
               {banner && <Banner score={attempt}  />}
             {card && <div> {questions.map((q, index) => (
                 <Card key={index} question={q.question}  correctAnswerMarkUpdate={correctAnswerMarkUpdate} attempt={attempt} options={opt} answer={q.answer} setQsns={setqsnAttempt} qsn={ qsnAttempt} setCard={setResult} qsnAttempt={qsnAttempt} />            
